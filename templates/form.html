@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>정보 입력</title>
+
+    <meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet"
+href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <h1>정보 입력</h1>
+
+    <form action="/result" method="POST">
+
+        <p>내 MBTI</p>
+
+        <select name="my_mbti">
+            <option>ISTJ</option>
+            <option>INTJ</option>
+            <option>ISTP</option>
+            <option>INTP</option>
+            <option>ISFJ</option>
+            <option>INFJ</option>
+            <option>ISFP</option>
+            <option>INFP</option>
+            <option>ESTJ</option>
+            <option>ENTJ</option>
+            <option>ESTP</option>
+            <option>ENTP</option>
+            <option>ESFJ</option>
+            <option>ENFJ</option>
+            <option>ESFP</option>
+            <option>ENFP</option>
+        </select>
+
+        <p>상대 MBTI</p>
+
+        <select name="other_mbti">
+            <option>ISTJ</option>
+            <option>INTJ</option>
+            <option>ISTP</option>
+            <option>INTP</option>
+            <option>ISFJ</option>
+            <option>INFJ</option>
+            <option>ISFP</option>
+            <option>INFP</option>
+            <option>ESTJ</option>
+            <option>ENTJ</option>
+            <option>ESTP</option>
+            <option>ENTP</option>
+            <option>ESFJ</option>
+            <option>ENFJ</option>
+            <option>ESFP</option>
+            <option>ENFP</option>
+        </select>
+
+        <p>관심사</p>
+
+        <select name="interest">
+            <option>음악</option>
+            <option>운동</option>
+            <option>영화</option>
+            <option>독서</option>
+            <option>여행</option>
+            <option>요리/미식</option>
+            <option>게임</option>
+            <option>자기계발/학습</option>
+            <option>동물</option>
+        </select>
+
+        <br><br>
+
+        <button type="submit">결과 보기</button>
+
+    </form>
+
+</body>
+</html>
